@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lista de Tarefas!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Crete+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+</head>
+<body>
+  <header class="d-flex">
+    <h1>EasyDay</h1>
+  </header>
+  <main>
+    <div>
+      <div class="add-container d-flex j-center al-center">
+        <input type="text" class="add-ipt" id="add-ipt" placeholder="Digite aqui sua tarefa">
+        <button class="add-btn" id="add-task"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="main-container d-flex fd-column al-center no-wrap">
+      <div class="task-container">
+        <div class="not-found hide" id="not-found"></div>
+        <ul class="d-flex al-center fd-column no-wrap" id="task-list"></ul>
+      </div>
+      <div class="select-container">
+        <select id="select-list">
+          <option value="all">Todas as tarefas</option>
+          <option value="todo">Tarefas a fazer</option>
+          <option value="done">Tarefas concluídas</option>
+        </select>
+      </div>
+      <div class="search-container d-flex j-center">
+        <input type="text" class="search-ipt" id="search-ipt" placeholder="Buscar tarefa">
+        <button class="search-btn" id="search-tasks"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./dist/app.js"></script>
+</body>
+</html>
